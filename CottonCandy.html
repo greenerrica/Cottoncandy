@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CottonCandy</title>
+    <style>
+     body {
+  background: linear-gradient(68.6deg, rgb(252, 165, 241) 1.8%, rgb(181, 255, 255) 100.5%);
+}
+h1 {
+    text-align: center;
+    color: rgb(238, 32, 101);
+    font-size: 48px;
+}
+h2 {
+    text-align: center;
+    color: rgb(238, 32, 101);
+    font-size: 40px;
+    
+}
+img {
+     display: block;
+            margin: 0 auto;
+            border-radius: 15px;
+}
+p {
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.5;
+}
+button {
+    border-radius: 25px;
+            margin: 0 auto;
+            display: block;
+            background-color: rgb(238, 32, 101);
+            border: 1px solid pink;
+            color: pink;
+            font-size: 16px;
+            line-height: 22px;
+            padding: 16px 24px;
+            text-decoration: none;
+            transition: all 200ms ease;
+            box-shadow: 10px;
+}
+div {
+    text-align: center;
+    font-size: medium;
+    color: rgb(238, 32, 101);
+
+}
+button:hover {
+    background: pink;
+    color:rgb(238, 32, 101);
+    border: 1px solid rgb(238, 32, 101);
+}
+    </style>
+</head>
+<body>
+    <h1>
+        <em>
+ I love sweets! 😋
+    </em> 
+    </h1> 
+    <h2>
+        🦄Especially CottonCandy!🦄
+        <br>
+        <hr>
+    </h2>
+    
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/613/original/Cotton_Candy.jpeg?1669667199" alt="Cotten Candy"
+        width="400px"
+        >
+    <p>
+        Cotton candy, also known as fairy floss and candy floss, <br>
+        is a spun sugar confection that resembles cotton. <br>
+        It usually
+        contains small amounts of flavoring or food coloring. <br>
+        
+        <a href="https://www.gmpopcorn.com/resources/blog/how-did-cotton-candy-get-started" target="_blank"
+        >learn more about cotton candy here.
+    </a>
+</p>
+    <button>
+        Buy Here
+    </button>
+    <div>
+        <br>
+      <strong> Coded by
+        Errica Green</strong>
+    </div>
+     <script>
+         function buyHere() {
+                let name = prompt("What is your name?");
+                let color = prompt("What is your favorite cotton candy color?");
+                let h1 = document.querySelector("h1");
+                h1.innerHTML= "Hello" + " " + name + " " + "I like" + " " + color + " " + "cottoncandy too!!";
+         }
+         let buyButton = document.querySelector("button");
+            buyButton.addEventListener("click", buyHere);
+     </script>  
+</body>
+</html>
